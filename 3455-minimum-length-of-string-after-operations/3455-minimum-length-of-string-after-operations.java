@@ -1,12 +1,12 @@
 class Solution {
     public int minimumLength(String s) {
-        int[] chars = new int[26];
-        int ans = 0;
+        HashMap<Character, Integer> map = new HashMap<>();
         for(char a : s.toCharArray()){
-            chars[a - 'a']++;
+            map.put(a, map.getOrDefault(a, 0) + 1);
         }
-
-        for(int f : chars){
+        
+        int ans = 0;
+        for(int f : map.values()){
             if(f == 0){
                 continue;
             }else if(f % 2 == 0){
@@ -14,7 +14,7 @@ class Solution {
             }else if(f % 2 == 1){
                 ans++;
             }
-        }
+        } 
 
         return ans;
     }
