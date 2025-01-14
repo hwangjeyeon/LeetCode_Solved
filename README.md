@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/3455-minimum-length-of-string-after-operations) |
 ## String
 |  |
@@ -15,4 +16,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/3455-minimum-length-of-string-after-operations) |
+## Array
+|  |
+| ------- |
+| [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+## Bit Manipulation
+|  |
+| ------- |
+| [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 <!---LeetCode Topics End-->
