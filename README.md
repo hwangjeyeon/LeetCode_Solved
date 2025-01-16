@@ -19,14 +19,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [2509-minimize-xor](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2509-minimize-xor) |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 ## Greedy
 |  |
 | ------- |
 | [2509-minimize-xor](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2509-minimize-xor) |
+## Brainteaser
+|  |
+| ------- |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2533-bitwise-xor-of-all-pairings) |
 <!---LeetCode Topics End-->
