@@ -21,12 +21,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [2792-neighboring-bitwise-xor](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2792-neighboring-bitwise-xor) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [2509-minimize-xor](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2509-minimize-xor) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [2792-neighboring-bitwise-xor](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2792-neighboring-bitwise-xor) |
 ## Greedy
 |  |
 | ------- |
