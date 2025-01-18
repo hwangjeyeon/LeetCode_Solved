@@ -26,30 +26,26 @@ class Solution {
         while(!q.isEmpty()){
             int[] now = q.pollFirst();
             System.out.println(now[0] + " " + now[1] + " " + cost[now[0]][now[1]]);
-
-            int ny = now[0] + dy[now[2]];
-            int nx = now[1] + dx[now[2]];
-            if(isRange(ny, nx) && cost[ny][nx] > cost[now[0]][now[1]]){
-                cost[ny][nx] = cost[now[0]][now[1]];       
-                q.addFirst(new int[]{ny,nx,grid[ny][nx]});
-            }
             
             for(int i=1; i<5; i++){
-                if(i == now[2]){
-                    continue;
-                }
-                ny = now[0] + dy[i];
-                nx = now[1] + dx[i];
-                if(isRange(ny, nx) && cost[ny][nx] > cost[now[0]][now[1]] + 1){
-                    cost[ny][nx] = cost[now[0]][now[1]] + 1; 
-                    q.offerLast(new int[]{ny, nx, grid[ny][nx]});
+                int ny = now[0] + dy[i];
+                int nx = now[1] + dx[i];
+                int costs = now[2] == i ? 0 : 1;
+                if(isRange(ny, nx) && cost[ny][nx] > cost[now[0]][now[1]] + costs){
+                    cost[ny][nx] = cost[now[0]][now[1]] + costs; 
+                    if(costs == 1){
+                        q.offerLast(new int[]{ny, nx, grid[ny][nx]});
+                    }else{
+                        q.offerFirst(new int[]{ny, nx, grid[ny][nx]});
+                    }
+                    
                 }
             }
         }
     }
 
-    private static boolean isRange(int ny, int nx){
-        return ny >= 0 && ny < n && nx >= 0 && nx < m;
+    private static boolean isRange(int y, int x){
+        return y >= 0 && y < n && x >= 0 && x < m;
     }
 
 
