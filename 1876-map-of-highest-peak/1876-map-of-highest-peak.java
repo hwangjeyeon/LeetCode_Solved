@@ -1,7 +1,5 @@
 class Solution {
-    static PriorityQueue<int[]> pq = new PriorityQueue<>((o1, o2) ->{
-        return o1[2] - o2[2];
-    });
+    static Queue<int[]> pq = new LinkedList<>();
     static int n;
     static int m;
     static int[][] arr;
