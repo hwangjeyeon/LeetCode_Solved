@@ -1,11 +1,11 @@
 class Solution {
     static boolean[] visited;
-    static boolean[] check;
+    static boolean[] cycle;
     public List<Integer> eventualSafeNodes(int[][] graph) {
         int n = graph.length;
         
         visited = new boolean[n];
-        check = new boolean[n];
+        cycle = new boolean[n];
         for(int i=0; i<n; i++){
             dfs(i, graph);
         }
@@ -13,7 +13,7 @@ class Solution {
 
         List<Integer> ans = new ArrayList<>();
         for(int i=0; i<n; i++){
-            if(!check[i]){
+            if(!cycle[i]){
                 ans.add(i);
             }
         }
@@ -21,7 +21,7 @@ class Solution {
     }
 
     private static boolean dfs(int start, int[][] graph){
-        if(check[start]){
+        if(cycle[start]){
             return true;
         }
         if(visited[start]){
@@ -29,13 +29,13 @@ class Solution {
         }
 
         visited[start] = true;
-        check[start] = true;
+        cycle[start] = true;
         for(int a : graph[start]){
             if(dfs(a, graph)){
                 return true;
             }
         }
-        check[start] = false;
+        cycle[start] = false;
         return false;
     }
 }
