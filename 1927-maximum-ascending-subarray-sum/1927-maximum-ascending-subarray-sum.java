@@ -8,7 +8,7 @@ class Solution {
                 sum += nums[i];
                 max = Math.max(max, sum);
             }else{
-                max = Math.max(sum, max);
+                max = Math.max(nums[i], max);
                 sum = nums[i];
             }
         }
