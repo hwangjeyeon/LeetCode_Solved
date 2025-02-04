@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1876-map-of-highest-peak](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1876-map-of-highest-peak) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1878-check-if-array-is-sorted-and-rotated) |
+| [1927-maximum-ascending-subarray-sum](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1927-maximum-ascending-subarray-sum) |
 | [2145-grid-game](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2145-grid-game) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2685-first-completely-painted-row-or-column](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2685-first-completely-painted-row-or-column) |
