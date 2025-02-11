@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0920-uncommon-words-from-two-sentences](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
+| [2021-remove-all-occurrences-of-a-substring](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [3447-clear-digits](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/3447-clear-digits) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/3455-minimum-length-of-string-after-operations) |
 ## Counting
@@ -147,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [2021-remove-all-occurrences-of-a-substring](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3447-clear-digits](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/3447-clear-digits) |
 ## Design
@@ -164,5 +166,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [2021-remove-all-occurrences-of-a-substring](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [3447-clear-digits](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/3447-clear-digits) |
 <!---LeetCode Topics End-->
