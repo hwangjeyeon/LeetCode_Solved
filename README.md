@@ -188,4 +188,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2802-find-the-punishment-number-of-an-integer) |
+## Database
+|  |
+| ------- |
+| [1908-recyclable-and-low-fat-products](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1908-recyclable-and-low-fat-products) |
 <!---LeetCode Topics End-->
