@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0920-uncommon-words-from-two-sentences](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1160-letter-tile-possibilities](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1160-letter-tile-possibilities) |
 | [1364-tuple-with-same-product](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1364-tuple-with-same-product) |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2107-find-unique-binary-string](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2107-find-unique-binary-string) |
 | [2434-design-a-number-container-system](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2434-design-a-number-container-system) |
@@ -90,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0820-find-eventual-safe-states) |
 | [0854-making-a-large-island](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0854-making-a-large-island) |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1396-count-servers-that-communicate](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1396-count-servers-that-communicate) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1558-course-schedule-iv](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1558-course-schedule-iv) |
@@ -139,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0820-find-eventual-safe-states) |
 | [0854-making-a-large-island](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0854-making-a-large-island) |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1396-count-servers-that-communicate](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1396-count-servers-that-communicate) |
 | [1558-course-schedule-iv](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1558-course-schedule-iv) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
@@ -173,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1477-product-of-the-last-k-numbers](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1477-product-of-the-last-k-numbers) |
 | [2434-design-a-number-container-system](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2434-design-a-number-container-system) |
 ## Ordered Set
@@ -218,4 +222,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1801-average-time-of-process-per-machine](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1801-average-time-of-process-per-machine) |
 | [1827-invalid-tweets](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1827-invalid-tweets) |
 | [1908-recyclable-and-low-fat-products](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1908-recyclable-and-low-fat-products) |
+## Tree
+|  |
+| ------- |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 <!---LeetCode Topics End-->
