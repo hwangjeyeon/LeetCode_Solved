@@ -1,18 +1,15 @@
 class Solution {
     public int longestNiceSubarray(int[] nums) {
-        int max = 1;
-        for(int i=0; i < nums.length - max; i++){
-            int cur = 1;
-            int bit = nums[i];
-            for(int j=i+1; j < nums.length; j++){
-                if((bit & nums[j]) == 0){
-                    bit |= nums[j];
-                    cur++;
-                }else{
-                    break;
-                }
+        int bit = 0;
+        int start = 0;
+        int max = 0;
+        for(int i=0; i<nums.length; i++){
+            while((bit & nums[i]) != 0){
+                bit ^= nums[start];
+                start++;
             }
-            max = Math.max(max, cur);
+            bit |= nums[i];
+            max = Math.max(max, i - start + 1);
         }
 
         return max;
