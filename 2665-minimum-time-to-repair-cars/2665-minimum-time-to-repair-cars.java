@@ -8,7 +8,6 @@ class Solution {
         }
         int[] freq = new int[max + 1];
         for(int rank : ranks){
-            min = Math.min(min, rank);
             freq[rank]++;
         }
 
