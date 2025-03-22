@@ -1,56 +1,60 @@
 class Solution {
-    static List<Integer>[] list;
     static int ans = 0;
-    static boolean[] visited;
-    static int adj;
-    static int node;
-    static List<Integer> nodes;
+    static int[] parent;
+    static int[] size;
     public int countCompleteComponents(int n, int[][] edges) {
         int len = edges.length;
-        list = new List[n];
-        visited = new boolean[n];
+        ans = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        parent = new int[n];
+        size = new int[n];
+        
         for(int i=0; i<n; i++){
-            list[i] = new ArrayList<>();
+            parent[i] = i;
+            size[i] = 1;
         }
 
-        for(int i=0; i<len; i++){
-            list[edges[i][0]].add(edges[i][1]);
-            list[edges[i][1]].add(edges[i][0]);
+        for(int[] edge : edges){
+            union(edge[0], edge[1]);
         }
-        ans = 0;
+
+        for(int[] edge : edges){
+            int root = find(edge[0]);
+            map.put(root, map.getOrDefault(root, 0) + 1);
+        }
         for(int i=0; i<n; i++){
-            if(!visited[i]){
-                nodes = new ArrayList<>();
-                bfs(i);
-                boolean isOk = true;
-                for(int a : nodes){
-                    if(list[a].size() != nodes.size() - 1){
-                        isOk = false;
-                        break;
-                    }
-                }
-                if(isOk){
+            if(find(i) == i){
+                int count = size[i];
+                int adj = (count * (count-1)) /2;
+                if(map.getOrDefault(i, 0) == adj){
                     ans++;
                 }
             }
         }
+        
         return ans;
     }
 
-    private static void bfs(int now){
-        Queue<Integer> q = new LinkedList<>();
-        q.add(now);
-        visited[now] = true;
+    private static int find(int a){
+        if(parent[a] == a){
+            return a;
+        }
+        return parent[a] = find(parent[a]);
+    }
 
-        while(!q.isEmpty()){
-            int cur = q.poll();
-            nodes.add(cur);
-            for(int adj : list[cur]){
-                if(!visited[adj]){
-                    q.add(adj);
-                    visited[adj] = true;
-                }
-            }
+    private static void union(int a, int b){
+        int x = find(a);
+        int y = find(b);
+        if(x == y){
+            return;
+        }
+
+        if(size[x] > size[y]){
+            parent[y] = x;
+            size[x] += size[y];
+        }else{
+            parent[x] = y;
+            size[y] += size[x];
         }
     }
 
