@@ -24,7 +24,7 @@ class Solution {
                 bfs(i);
                 boolean isOk = true;
                 for(int a : nodes){
-                    if(nodes.size()-1 != list[a].size()){
+                    if(list[a].size() != nodes.size() - 1){
                         isOk = false;
                         break;
                     }
@@ -36,14 +36,15 @@ class Solution {
         }
         return ans;
     }
+
     private static void bfs(int now){
         Queue<Integer> q = new LinkedList<>();
         q.add(now);
         visited[now] = true;
+
         while(!q.isEmpty()){
             int cur = q.poll();
             nodes.add(cur);
-
             for(int adj : list[cur]){
                 if(!visited[adj]){
                     q.add(adj);
