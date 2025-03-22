@@ -1,13 +1,14 @@
 class Solution {
     static List<Integer>[] list;
     static int ans = 0;
-    static Set<Integer> visited;
+    static boolean[] visited;
     static int adj;
     static int node;
+    static List<Integer> nodes;
     public int countCompleteComponents(int n, int[][] edges) {
         int len = edges.length;
         list = new List[n];
-        visited = new HashSet<>();
+        visited = new boolean[n];
         for(int i=0; i<n; i++){
             list[i] = new ArrayList<>();
         }
@@ -18,27 +19,37 @@ class Solution {
         }
         ans = 0;
         for(int i=0; i<n; i++){
-            if(visited.contains(i)){
-                continue;
-            }
-            adj = 0;
-            node = 0;
-            dfs(i);
-            if(adj == (node) * (node-1)){
-                ans++;
+            if(!visited[i]){
+                nodes = new ArrayList<>();
+                bfs(i);
+                boolean isOk = true;
+                for(int a : nodes){
+                    if(nodes.size()-1 != list[a].size()){
+                        isOk = false;
+                        break;
+                    }
+                }
+                if(isOk){
+                    ans++;
+                }
             }
         }
         return ans;
     }
-    private static void dfs(int now){
-        visited.add(now);
-        node++;
-        adj += list[now].size();
-        for(Integer edge : list[now]){
-            if(!visited.contains(edge)){
-                dfs(edge);
+    private static void bfs(int now){
+        Queue<Integer> q = new LinkedList<>();
+        q.add(now);
+        visited[now] = true;
+        while(!q.isEmpty()){
+            int cur = q.poll();
+            nodes.add(cur);
+
+            for(int adj : list[cur]){
+                if(!visited[adj]){
+                    q.add(adj);
+                    visited[adj] = true;
+                }
             }
-           
         }
     }
 
