@@ -1,30 +1,27 @@
 class Solution {
     public int maximumCandies(int[] candies, long k) {
         int n = candies.length;
-        int max = 0;
+        int right = 0;
         for(int i=0; i<n; i++){
-            max = Math.max(max, candies[i]);
+            right = Math.max(right, candies[i]);
         }
-        int left = 0;
-        int right = max;
+        
+        int left = 1;
+        int ans = 0;
+        while(left <= right){
+            int mid = (left + right) / 2;
+            long count = 0;
+            for(int i=0; i<n; i++){
+                count += (candies[i] / mid);
+            }
 
-        while(left < right){
-            int mid = (left+ right + 1) / 2;
-            if(check(candies, k, mid)){
-                left= mid;
+            if(count >= k){
+                left = mid + 1;
+                ans = Math.max(mid, ans);
             }else{
-                right = mid - 1;
+                right = mid-1;
             }
         }
-
-        return left;
-    }
-
-    private static boolean check(int[] candies, long k, int num){
-        long max= 0;
-        for(int i=0; i<candies.length; i++){
-            max += candies[i] / num;
-        }
-        return max >= k;
+        return ans;
     }
 }
