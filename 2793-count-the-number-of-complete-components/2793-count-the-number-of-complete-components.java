@@ -1,44 +1,30 @@
 class Solution {
-    static List<Integer>[] lists;
-    static int ans;
-    static Set<Integer> visited;
     public int countCompleteComponents(int n, int[][] edges) {
-        lists = new List[n];
+        List<Integer>[] list = new List[n];
+        Map<List<Integer>, Integer> freq = new HashMap<>();
+
         for(int i=0; i<n; i++){
-            lists[i] = new ArrayList<>();
+            list[i] = new ArrayList<>();
+            list[i].add(i);
+        }
+        for(int[] edge : edges){
+            list[edge[0]].add(edge[1]);
+            list[edge[1]].add(edge[0]);
         }
 
-        for(int i=0; i<edges.length; i++){
-            int a = edges[i][0];
-            int b = edges[i][1];
-            lists[a].add(b);
-            lists[b].add(a);
+        for(int i=0; i< n; i++){
+            List<Integer> adj = list[i];
+            Collections.sort(adj);
+            freq.put(adj, freq.getOrDefault(adj, 0) + 1);
         }
-        ans = 0;
-        visited = new HashSet<>();
-        for(int i=0; i<n; i++){
-            if(visited.contains(i)){
-                continue;
-            }
-            int[] info = new int[2];
-            dfs(n, i, info);
-            if(info[0] * (info[0] - 1) == info[1]){
-                ans++;
+
+        int count = 0;
+        for(Map.Entry<List<Integer>, Integer> entry : freq.entrySet()){
+            if(entry.getKey().size() == entry.getValue()){
+                count++;
             }
         }
-        return ans;
+        return count;
     }
 
-    private static void dfs(int n, int now, int[] info){
-        visited.add(now);
-        info[0]++;
-        info[1] += lists[now].size();
-
-        for(Integer i : lists[now]){
-            if(!visited.contains(i)){
-                dfs(n, i, info);
-            }
-        }
-
-    }
 }
