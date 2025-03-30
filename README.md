@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0768-partition-labels](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0768-partition-labels) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
@@ -31,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0768-partition-labels](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0768-partition-labels) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1160-letter-tile-possibilities](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1160-letter-tile-possibilities) |
@@ -125,6 +127,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0768-partition-labels](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0768-partition-labels) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2456-construct-smallest-number-from-di-string) |
 | [2509-minimize-xor](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2509-minimize-xor) |
 | [3001-apply-operations-to-maximize-score](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/3001-apply-operations-to-maximize-score) |
@@ -375,6 +378,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0768-partition-labels](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0768-partition-labels) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2551-apply-operations-to-an-array](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2551-apply-operations-to-an-array) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/2588-maximum-number-of-points-from-grid-queries) |
