@@ -1,12 +1,22 @@
 class Solution {
     public int minimumOperations(int[] nums) {
-        boolean[] chk = new boolean[128];
-        for(int i=nums.length-1; i>=0; i--){
-            if(chk[nums[i]]){
-                return i / 3 + 1;
+        int ans = 0;
+        for(int i=0; i<nums.length; i+=3){
+            if(check(nums, i)){
+                return ans;
             }
-            chk[nums[i]] = true;
+            ans++;
         }
-        return 0;
+        return ans;
+    }
+    private static boolean check(int[] nums, int start){
+        HashSet<Integer> set = new HashSet<>();
+        for(int i=start; i<nums.length; i++){
+            if(set.contains(nums[i])){
+                return false;
+            }
+            set.add(nums[i]);
+        }
+        return true;
     }
 }
