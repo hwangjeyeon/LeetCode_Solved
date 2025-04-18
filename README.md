@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0038-count-and-say](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0038-count-and-say) |
 | [0768-partition-labels](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0768-partition-labels) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/hwangjeyeon/LeetCode_Solved/tree/master/1093-recover-a-tree-from-preorder-traversal) |
