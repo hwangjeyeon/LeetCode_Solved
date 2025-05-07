@@ -1,4 +1,4 @@
-# Write your MySQL query statement below
-select a.id as Id from Weather as a
-inner join Weather as b on datediff(a.recordDate,b.recordDate) = 1
-where a.temperature > b.temperature
+/* Write your T-SQL query statement below */
+SELECT A.ID AS Id FROM WEATHER AS A, WEATHER AS B
+WHERE DATEDIFF(dd, B.recordDate, A.recordDate) = 1
+AND A.TEMPERATURE > B.TEMPERATURE
