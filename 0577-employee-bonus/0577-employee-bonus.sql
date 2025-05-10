@@ -1,4 +1,4 @@
-# Write your MySQL query statement below
-select a.name, b.bonus from Employee as a
-left join Bonus as b on a.empId = b.empId
-where b.bonus < 1000 or b.bonus is null
+/* Write your T-SQL query statement below */
+SELECT name, bonus FROM EMPLOYEE AS E
+LEFT JOIN BONUS AS B ON E.EMPID = B.EMPID
+WHERE BONUS < 1000 OR BONUS IS NULL
