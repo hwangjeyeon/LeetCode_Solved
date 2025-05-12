@@ -1,4 +1,4 @@
-# Write your MySQL query statement below
-select id, movie, description, rating from Cinema
-where id % 2 = 1 and description <> 'boring'
-order by rating desc
+/* Write your T-SQL query statement below */
+SELECT id, movie, description, rating FROM CINEMA
+WHERE DESCRIPTION <> 'boring' AND id % 2 = 1
+ORDER BY rating DESC;
