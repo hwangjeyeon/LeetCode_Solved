@@ -1,5 +1,5 @@
-# Write your MySQL query statement below
-select author_id as id from Views
-where author_id = viewer_id
-group by author_id
-order by author_id
+/* Write your T-SQL query statement below */
+SELECT author_id AS id FROM VIEWS V1
+WHERE AUTHOR_ID = VIEWER_ID
+GROUP BY AUTHOR_ID
+ORDER BY AUTHOR_ID 
