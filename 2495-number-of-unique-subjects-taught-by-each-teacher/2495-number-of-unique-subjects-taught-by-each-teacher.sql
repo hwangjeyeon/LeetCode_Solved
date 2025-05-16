@@ -1,3 +1,3 @@
-# Write your MySQL query statement below
-select teacher_id, count(distinct subject_id) as cnt from Teacher
-group by teacher_id
+/* Write your T-SQL query statement below */
+SELECT teacher_id, COUNT(DISTINCT SUBJECT_ID) as cnt FROM TEACHER
+GROUP BY teacher_id
