@@ -1,3 +1,3 @@
-# Write your MySQL query statement below
-select patient_id, patient_name, conditions from Patients
-where conditions like 'DIAB1%'or conditions like '% DIAB1%'
+/* Write your T-SQL query statement below */
+SELECT patient_id, patient_name, conditions FROM PATIENTS 
+WHERE CONDITIONS LIKE 'DIAB1%' OR CONDITIONS LIKE '% DIAB1%'
