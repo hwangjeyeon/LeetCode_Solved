@@ -1,4 +1,4 @@
-# Write your MySQL query statement below
-delete a from Person as a, Person as b
-where a.email = b.email 
-and a.id > b.id;
+/* Write your T-SQL query statement below */
+DELETE P1 FROM PERSON AS P1, PERSON AS P2
+WHERE P1.EMAIL = P2.EMAIL
+AND P1.ID > P2.ID
