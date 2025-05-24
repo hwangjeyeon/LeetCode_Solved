@@ -1,4 +1,5 @@
-# Write your MySQL query statement below
-select activity_date as day, count(distinct user_id) as active_users from Activity
-where activity_date between '2019-06-28' and '2019-07-27'
-group by day;
+/* Write your T-SQL query statement below */
+SELECT ACTIVITY_DATE AS day, COUNT(DISTINCT USER_ID) AS active_users
+FROM ACTIVITY
+WHERE ACTIVITY_DATE BETWEEN '2019-06-28' AND '2019-07-27'
+GROUP BY ACTIVITY_DATE
