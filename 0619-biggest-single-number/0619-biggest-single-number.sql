@@ -1,3 +1,9 @@
-# Write your MySQL query statement below
-select max(num) as num from MyNumbers
-where num in (select num from MyNumbers group by num having count(num) = 1)
+/* Write your T-SQL query statement below */
+SELECT TOP 1 MAX(
+    NUM
+) AS num FROM MYNUMBERS
+WHERE NUM IN (
+    SELECT NUM FROM MYNUMBERS 
+    GROUP BY NUM
+    HAVING COUNT(NUM) = 1
+)
