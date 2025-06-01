@@ -1,6 +1,6 @@
-# Write your MySQL query statement below
-select a.product_name, sum(b.unit) as unit from Products as a
-join Orders as b on a.product_id = b.product_id
-where year(order_date) = 2020 and month(order_date) = 2
-group by product_name
-having sum(unit) >= 100
+/* Write your T-SQL query statement below */
+SELECT product_name, SUM(unit) AS unit FROM PRODUCTS P 
+INNER JOIN ORDERS O ON P.PRODUCT_ID = O.PRODUCT_ID
+WHERE YEAR(ORDER_DATE) = 2020 AND MONTH(ORDER_DATE) = 2
+GROUP BY PRODUCT_NAME
+HAVING SUM(UNIT) >= 100
