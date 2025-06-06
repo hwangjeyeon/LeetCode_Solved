@@ -1,8 +1,13 @@
-# Write your MySQL query statement below
-select a.user_id, ifnull(round((select count(c.user_id) from Confirmations as c
-where action = 'confirmed' and c.user_id = a.user_id
-group by user_id)/count(b.user_id)
-,2),0) as confirmation_rate from Signups as a
-left join Confirmations as b on a.user_id = b.user_id
-group by a.user_id
-
+/* Write your T-SQL query statement below */
+SELECT S.user_id, ISNULL(ROUND((
+    (SELECT COUNT(USER_ID )
+    FROM CONFIRMATIONS C
+    WHERE ACTION = 'confirmed' AND S.USER_ID = C.USER_ID
+    GROUP BY USER_ID) * 1.0
+    /
+    COUNT(C2.USER_ID) * 1.0
+),2),0) AS confirmation_rate
+FROM SIGNUPS S
+LEFT JOIN CONFIRMATIONS C2
+ON S.USER_ID = C2.USER_ID
+GROUP BY S.USER_ID
